@@ -1,15 +1,25 @@
 import Foundation
 
 
-func calcularNotaFinal(examen: Double, tarea: Double )-> String{
-    var examenPromedio = examen * 0.7
-    var tareaPromedio = tarea * 0.3
-    var promedioFinal = examenPromedio + tareaPromedio
+func calcularPrecioBoleto(edad: Int, precioBase: Double) -> String {
     
-    if promedioFinal >= 6{
-        return("aprobado")
+    if edad < 12{
+        var descuento = precioBase * 0.50
+        var descuentoReal = precioBase - descuento
+        return("el descuento que se hizo por ser menor de 12 es de: \(descuentoReal)")
+    }else if edad >= 65{
+        var descuento = precioBase * 0.30
+        var descuentoReal = precioBase - descuento
+        return("descuento por ser mayor de edad es de: \(descuentoReal)")
     }else{
-        return("reprobado")
+        return("se paga el precio normal \(precioBase)")
     }
 }
-calcularNotaFinal(examen: 6, tarea: 2)
+calcularPrecioBoleto(edad: 10, precioBase: 100)
+// "el descuento que se hizo por ser menor de 12 es de 50.0"
+
+calcularPrecioBoleto(edad: 70, precioBase: 100)
+// "el descuento que se hizo por ser mayor de 65 es de 70.0"
+
+calcularPrecioBoleto(edad: 30, precioBase: 100)
+// "se paga el precio normal 100.0"
