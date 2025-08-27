@@ -1,11 +1,18 @@
 import Foundation
-var precioProducto: Double = 3989
-var cantidad: Int = 5
 
-var multiplicando = Double(cantidad) * precioProducto
 
-if multiplicando > 500{
-    multiplicando =  multiplicando - (multiplicando * 0.10)
+func  calcularPrecioFinal (precio: Double, cantidad: Int) -> Double{
+    var total = precio * Double(cantidad) // cuanto seria en total si se lleva tantas cantidaddes y cuesta esto el TOTAL
+    var descuento : Double
+    var precioFinal: Double
+    
+    //Si el total es mayor a 100, aplicar un 10% de descuento.
+    if total > 100{
+        descuento = total * 0.10 //total * 0.10  y se guarda en descuento
+        precioFinal = total - descuento // total - descuento y se guarda ya el precio final
+     return (precioFinal)
+    }else{
+        return (total)
+    }
 }
 
-print("tu producto costaba \(precioProducto) la cantidad que te estas llevando son \(cantidad) pero con el descuento el costo seria \(multiplicando).")
