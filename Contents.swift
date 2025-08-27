@@ -1,17 +1,15 @@
 import Foundation
 
 
-func  CalcularEnvio(precio: Double, cantidad: Int, envio: Double )-> Double {
-    var total = precio * Double(cantidad)
+func calcularNotaFinal(examen: Double, tarea: Double )-> String{
+    var examenPromedio = examen * 0.7
+    var tareaPromedio = tarea * 0.3
+    var promedioFinal = examenPromedio + tareaPromedio
     
-    if total >= 500{
-        return (total)
-    }else if total < 500{
-        return(total + envio)
+    if promedioFinal >= 6{
+        return("aprobado")
     }else{
-        return(total)
+        return("reprobado")
     }
-    
 }
-
-CalcularEnvio(precio: 100, cantidad: 2, envio: 50)
+calcularNotaFinal(examen: 6, tarea: 2)
