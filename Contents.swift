@@ -1,11 +1,7 @@
 import Foundation
 
-let conectado: Bool = true
+let texto = "hola"
 
-var convertidor = String(conectado)
+let convertidor = Int(texto)!
 
-print(conectado)
 print(convertidor)
-
-print(type(of: conectado))   // Bool
-print(type(of: convertidor)) // String
