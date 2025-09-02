@@ -1,10 +1,12 @@
 import Foundation
 
-func edadPersona(edad: Int) -> String{
-    let convertir = String(edad)
+func Doblar(numero: String) -> String{
+    let convertir = Int(numero)!
     
-    let mensaje : String = "la edad de la persona es \(convertir)"
-    return mensaje 
+    var multiplicar = convertir * 2
+    
+    var convertir2 = String(multiplicar)
+    return convertir2
 }
 
-edadPersona(edad: 20)
+Doblar(numero: "22")
