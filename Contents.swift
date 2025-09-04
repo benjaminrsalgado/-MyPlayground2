@@ -1,7 +1,10 @@
 import Foundation
 
-func persona (nombre: String, edad: Int){
-    print("hola \(nombre) tienes \(edad)")
+
+
+func precioProducto(precio: Double, iva:Double){
+    var preciomasProducto = precio + iva
+    print("el precio del producto junto con el iva es \(preciomasProducto)")
 }
 
-persona(nombre: "Benjamin", edad: 22)
+precioProducto(precio: 2222, iva:199)
