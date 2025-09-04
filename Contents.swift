@@ -1,7 +1,7 @@
 import Foundation
 
-let texto = "hola"
+func persona (nombre: String, edad: Int){
+    print("hola \(nombre) tienes \(edad)")
+}
 
-let convertidor = Int(texto)!
-
-print(convertidor)
+persona(nombre: "Benjamin", edad: 22)
