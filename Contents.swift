@@ -1,10 +1,7 @@
 import Foundation
 
-
-
-func precioProducto(precio: Double, iva:Double){
-    var preciomasProducto = precio + iva
-    print("el precio del producto junto con el iva es \(preciomasProducto)")
+func subtract (_ a: Int, _ b: Int){
+    print("el valor va a ir de \(a) hasta \(b)")
 }
 
-precioProducto(precio: 2222, iva:199)
+subtract(20, 30)
