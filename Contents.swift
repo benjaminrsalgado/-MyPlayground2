@@ -1,7 +1,10 @@
 import Foundation
 
-func subtract (_ a: Int, _ b: Int){
-    print("el valor va a ir de \(a) hasta \(b)")
+func multiply(_ a: Int, by  b: Int){
+    var multiplicacion = a * b
+    
+    print("si multiplicamos \(a) y multiplicamos \(b) el valor va a dar \(multiplicacion)")
 }
 
-subtract(20, 30)
+
+multiply(5, by: 10)
