@@ -1,10 +1,10 @@
 import Foundation
 
-func multiply(_ a: Int, by  b: Int){
-    var multiplicacion = a * b
-    
-    print("si multiplicamos \(a) y multiplicamos \(b) el valor va a dar \(multiplicacion)")
+
+func area(ofBase: Int, andHeight: Int){
+    var formula = (ofBase * andHeight) / 2
 }
 
 
-multiply(5, by: 10)
+
+area(ofBase: 10, andHeight: 5)
